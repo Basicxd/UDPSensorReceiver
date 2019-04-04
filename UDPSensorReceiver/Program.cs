@@ -6,7 +6,9 @@ namespace UDPSensorReceiver
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Socket socketsom = new Socket();
+
+            socketsom.broadMain();
         }
     }
 }
