@@ -37,16 +37,15 @@ namespace UDPSensorReceiver
                     //double nOx = Convert.ToDouble(data[4]);
                     string particleLevel = data[5];
 
-                    string[] some = data[3].Split(':');
-                    string some1 = some[3];
+                    //string[] some = data[3].Split(':');
+                    //string some1 = some[3];
 
-                    Console.WriteLine(some1);
+                    //Console.WriteLine(some1);
 
                     for (int i = 0; i <= 5; i++)
                     {
-                        Console.WriteLine(i + "   " + data[i]);
+                        Console.WriteLine(i + ":   " + data[i]);
                     }
-
 
                     //Console.WriteLine($"{sender} {location}");
 
@@ -58,14 +57,12 @@ namespace UDPSensorReceiver
                     //Console.WriteLine(particleLevel);
                     //Console.WriteLine();
 
-
                     //Console.WriteLine(receivedData);
 
                     //Console.WriteLine("This message was sent from " +
                     //                  RemoteIpEndPoint.Address.ToString() +
                     //                  " on their port number " +
                     //                  RemoteIpEndPoint.Port.ToString());
-
                 }
             }
             catch (Exception e)
